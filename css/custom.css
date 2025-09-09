@@ -1,0 +1,32 @@
+/* Custom styles for project images */
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Fixed height for all image containers */
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 0.5rem;
+}
+
+.project-image-container img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-image-container {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-image-container {
+        height: 160px;
+    }
+}
