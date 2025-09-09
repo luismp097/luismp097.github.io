@@ -26,16 +26,17 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Presentación</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Experiencia y Formación</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Presentación</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
+            <header id="inicio" class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-xxl-5">
@@ -48,8 +49,8 @@
                                 <!-- <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"> -->
                                     <!-- <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
                                     <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a> -->
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-3 fs-6 fw-bolder" href="resume.html">Experiencia y Formación</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 ms-2 fs-6 fw-bolder" href="projects.html">Proyectos</a>
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-3 fs-6 fw-bolder" href="#experiencia">Ver Experiencia</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 ms-2 fs-6 fw-bolder" href="#proyectos">Ver Proyectos</a>
                             </div>
                         </div>
                         <div class="col-xxl-7">
@@ -177,27 +178,128 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
+            <!-- Experience Section -->
+            <section id="experiencia" class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Experiencia Profesional</h2>
+                    </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre Mi</span></h2>
-                                <p class="lead fw-light mb-4">Mi nombre es Luis Martínez.</p>
-                                <p class="text-muted">Apasionado por la informática y la tecnología. Soy graduado en Ingeniería Informática por la Universidad Miguel Hernández. He cursado el Máster en Big Data por la UM. Tengo experiencia en el sector de automatización de procesos e IA. He realizado diversos proyectos de desarrollo web y tratamiento de gran volumen de datos. Siempre en constante evolución y aprendizaje en el sector IT. </p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2020 - Presente</div>
+                                                <div class="small fw-bolder">Desarrollador Full Stack</div>
+                                                <div class="small text-muted">Empresa de Tecnología</div>
+                                                <div class="small text-muted">Madrid, España</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Desarrollo de aplicaciones web completas utilizando tecnologías como React, Node.js y bases de datos SQL/NoSQL. Implementación de soluciones escalables y mantenibles siguiendo las mejores prácticas de desarrollo.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2018 - 2020</div>
+                                                <div class="small fw-bolder">Desarrollador Frontend</div>
+                                                <div class="small text-muted">Agencia Digital</div>
+                                                <div class="small text-muted">Barcelona, España</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Desarrollo de interfaces de usuario responsivas y accesibles utilizando HTML5, CSS3 y JavaScript. Colaboración con diseñadores y desarrolladores backend para implementar funcionalidades completas.</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
-        <!-- Footer-->
+
+            <!-- Education Section -->
+            <section id="formacion" class="bg-light py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Formación Académica</h2>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2016 - 2020</div>
+                                                <div class="small fw-bolder">Grado en Ingeniería Informática</div>
+                                                <div class="small text-muted">Universidad de Madrid</div>
+                                                <div class="small text-muted">Madrid, España</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Especialización en Desarrollo de Software y Sistemas de Información. Proyecto fin de grado: "Desarrollo de una aplicación web para la gestión de proyectos ágiles".</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="proyectos" class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Proyectos Destacados</h2>
+                        <p class="lead fw-normal text-muted mb-0">Algunos de mis trabajos más recientes</p>
+                    </div>
+                    <div class="row gx-5">
+                        <!-- Project items will be added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacto" class="bg-light py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Contacto</h2>
+                        <p class="lead fw-normal text-muted mb-0">¿Tienes alguna pregunta o quieres trabajar juntos?</p>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <!-- Contact form will be added here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="sobre-mi" class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre Mí</span></h2>
+                                <p class="lead fw-light mb-4">Mi nombre es Luis Martínez.</p>
+                                <p class="text-muted">Apasionado por la informática y la tecnología. Soy graduado en Ingeniería Informática por la Universidad Miguel Hernández. He cursado el Máster en Big Data por la UM. Tengo experiencia en el sector de automatización de procesos e IA. He realizado diversos proyectos de desarrollo web y tratamiento de gran volumen de datos. Siempre en constante evolución y aprendizaje en el sector IT.</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                </div>
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
