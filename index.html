@@ -388,74 +388,177 @@
                         <h2 class="fw-bolder">Proyectos Destacados</h2>
                         <p class="lead fw-normal text-muted mb-0">Algunos de mis trabajos más recientes</p>
                     </div>
-                    <div class="row gx-5">
-                        <!-- Proyecto 1 -->
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://via.placeholder.com/600x350" alt="Proyecto 1" />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Web</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Sistema de Gestión de Proyectos</h5></a>
-                                    <p class="card-text mb-0">Plataforma web para la gestión ágil de proyectos con seguimiento de tareas y colaboración en equipo.</p>
+                    
+                    <!-- Proyecto 1 -->
+                    <div class="card shadow border-0 rounded-4 mb-5" id="proyecto-1">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-gradient text-white rounded-3 p-3 me-3">
+                                    <i class="bi bi-laptop"></i>
                                 </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="small">
-                                                <div class="text-muted">Tecnologías:</div>
-                                                <div>React, Node.js, MongoDB</div>
-                                            </div>
-                                        </div>
+                                <h2 class="fw-bolder mb-0">Sistema de Gestión de Proyectos</h2>
+                            </div>
+                            <div class="mb-4">
+                                <span class="badge bg-primary bg-gradient rounded-pill me-2">Web</span>
+                                <span class="badge bg-secondary bg-gradient rounded-pill">Full Stack</span>
+                            </div>
+                            <p class="lead">Plataforma web para la gestión ágil de proyectos con seguimiento de tareas y colaboración en equipo.</p>
+                            
+                            <!-- Galería de imágenes -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Capturas</h4>
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <img src="https://via.placeholder.com/800x500" alt="Vista general del proyecto" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <img src="https://via.placeholder.com/800x500" alt="Panel de control" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <img src="https://via.placeholder.com/800x500" alt="Gestión de tareas" class="img-fluid rounded-3 shadow-sm">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Proyecto 2 -->
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://via.placeholder.com/600x350" alt="Proyecto 2" />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">IA</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Sistema de Recomendación</h5></a>
-                                    <p class="card-text mb-0">Algoritmo de recomendación basado en machine learning para plataforma de contenidos digitales.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="small">
-                                                <div class="text-muted">Tecnologías:</div>
-                                                <div>Python, Scikit-learn, Pandas</div>
-                                            </div>
-                                        </div>
+                            
+                            <!-- Detalles del proyecto -->
+                            <div class="mb-4">
+                                <h4>Detalles del Proyecto</h4>
+                                <p>Desarrollo completo de una aplicación web para la gestión de proyectos siguiendo metodologías ágiles. Incluye tableros Kanban, seguimiento de tareas y gestión de equipos.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mt-3">Tecnologías utilizadas:</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Frontend: React, Redux, Material-UI</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Backend: Node.js, Express</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Base de datos: MongoDB</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Autenticación: JWT</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-3">Características principales:</h5>
+                                        <ul>
+                                            <li>Gestión de proyectos y tareas</li>
+                                            <li>Colaboración en tiempo real</li>
+                                            <li>Generación de informes</li>
+                                            <li>Notificaciones</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Proyecto 3 -->
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://via.placeholder.com/600x350" alt="Proyecto 3" />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Móvil</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">App de Tareas</h5></a>
-                                    <p class="card-text mb-0">Aplicación móvil para la gestión de tareas personales con recordatorios y sincronización en la nube.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="small">
-                                                <div class="text-muted">Tecnologías:</div>
-                                                <div>React Native, Firebase</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            
+                            <!-- Archivos adjuntos -->
+                            <div class="mb-4">
+                                <h4>Documentación</h4>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-file-pdf me-2"></i>Documentación Técnica
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-github me-2"></i>Repositorio GitHub
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-youtube me-2"></i>Video Demo
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center mt-5">
-                        <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" href="#!">Ver más proyectos</a>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="card shadow border-0 rounded-4 mb-5" id="proyecto-2">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-gradient text-white rounded-3 p-3 me-3">
+                                    <i class="bi bi-robot"></i>
+                                </div>
+                                <h2 class="fw-bolder mb-0">Sistema de Recomendación</h2>
+                            </div>
+                            <div class="mb-4">
+                                <span class="badge bg-success bg-gradient rounded-pill me-2">IA</span>
+                                <span class="badge bg-info bg-gradient rounded-pill">Machine Learning</span>
+                            </div>
+                            <p class="lead">Algoritmo de recomendación basado en machine learning para plataforma de contenidos digitales.</p>
+                            
+                            <!-- Galería de imágenes -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Visualizaciones</h4>
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-6">
+                                        <img src="https://via.placeholder.com/800x500" alt="Diagrama del modelo" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <img src="https://via.placeholder.com/800x500" alt="Resultados" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Archivos adjuntos -->
+                            <div class="mb-4">
+                                <h4>Recursos</h4>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-journal-code me-2"></i>Notebook del Análisis
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-github me-2"></i>Repositorio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <!-- Proyecto 3 -->
+                    <div class="card shadow border-0 rounded-4 mb-5" id="proyecto-3">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-gradient text-white rounded-3 p-3 me-3">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                <h2 class="fw-bolder mb-0">App de Tareas</h2>
+                            </div>
+                            <div class="mb-4">
+                                <span class="badge bg-purple bg-gradient rounded-pill me-2">Móvil</span>
+                                <span class="badge bg-warning bg-gradient text-dark">React Native</span>
+                            </div>
+                            <p class="lead">Aplicación móvil para la gestión de tareas personales con recordatorios y sincronización en la nube.</p>
+                            
+                            <!-- Galería de imágenes -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Capturas de Pantalla</h4>
+                                <div class="row g-4">
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <img src="https://via.placeholder.com/400x800" alt="Pantalla de inicio" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <img src="https://via.placeholder.com/400x800" alt="Lista de tareas" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <img src="https://via.placeholder.com/400x800" alt="Recordatorios" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <img src="https://via.placeholder.com/400x800" alt="Perfil" class="img-fluid rounded-3 shadow-sm">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Archivos adjuntos -->
+                            <div class="mb-4">
+                                <h4>Descargas</h4>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-google-play me-2"></i>Google Play
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-apple me-2"></i>App Store
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-github me-2"></i>Código Fuente
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
