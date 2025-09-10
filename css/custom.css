@@ -1,56 +1,54 @@
-/* Profile section adjustments */
-#inicio {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    padding-bottom: 4rem;
-}
-
-.profile {
+/* Profile Photo Section */
+.profile-container {
     position: relative;
     width: 100%;
-    max-width: 35rem;
+    max-width: 800px;
     margin: 0 auto;
-    overflow: visible;
+    padding: 1rem;
 }
 
-.profile .profile-img {
+.profile-container img {
     width: 100%;
     height: auto;
-    max-width: 100%;
-    position: relative;
-    left: auto;
-    transform: none;
-    margin-top: 2rem;
-    z-index: 1;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Add margin to the button container */
-.d-grid.gap-3.d-sm-flex {
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 2;
+.profile-container img:hover {
+    transform: translateY(-5px);
 }
 
-/* Ensure proper spacing before Sobre Mi section */
+/* Header Section */
+#inicio {
+    position: relative;
+    padding: 5rem 0;
+    background: white;
+}
+
+/* Sobre Mí Section */
 #sobre-mi {
     position: relative;
-    z-index: 2;
-    background: white; /* Ensure solid background */
-    padding-top: 4rem !important;
-    margin-top: -2rem; /* Pull up slightly to close gap */
+    padding: 5rem 0;
+    background: #f8f9fa;
 }
 
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    #inicio {
-        padding-bottom: 6rem;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0.5rem;
     }
     
-    #sobre-mi {
-        padding-top: 6rem !important;
-        margin-top: -4rem;
+    #inicio, #sobre-mi {
+        padding: 3rem 0;
     }
+}
+
+/* Remove old profile styles */
+.profile, 
+.profile .profile-img {
+    all: unset;
 }
 
 /* Custom styles for project images */
