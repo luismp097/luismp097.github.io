@@ -1,25 +1,56 @@
-/* Adjust profile image positioning */
+/* Profile section adjustments */
+#inicio {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
 .profile {
-  position: relative;
-  width: 100%;
-  max-width: 40rem;
-  margin: 0 auto;
-  overflow: visible;
+    position: relative;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    overflow: visible;
 }
 
 .profile .profile-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  position: relative;
-  left: auto;
-  transform: none;
-  margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-top: 2rem;
+    z-index: 1;
 }
 
 /* Add margin to the button container */
 .d-grid.gap-3.d-sm-flex {
-    margin-bottom: 3rem;  /* Increased margin for better spacing */
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Ensure proper spacing before Sobre Mi section */
+#sobre-mi {
+    position: relative;
+    z-index: 2;
+    background: white; /* Ensure solid background */
+    padding-top: 4rem !important;
+    margin-top: -2rem; /* Pull up slightly to close gap */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    #inicio {
+        padding-bottom: 6rem;
+    }
+    
+    #sobre-mi {
+        padding-top: 6rem !important;
+        margin-top: -4rem;
+    }
 }
 
 /* Custom styles for project images */
