@@ -27,6 +27,49 @@
     background: white;
 }
 
+/* Header Badge Text */
+#inicio .badge {
+    max-width: 100%;
+    padding: 0.5rem 0.75rem;
+    white-space: normal;
+    line-height: 1.4;
+    display: inline-block;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+#inicio .badge .text-uppercase {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (min-width: 400px) {
+    #inicio .badge .text-uppercase {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 576px) {
+    #inicio .badge .text-uppercase {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    
+    #inicio .badge {
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+/* Ensure the badge doesn't overflow on small screens */
+#inicio .badge {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 /* Sobre Mí Section */
 #sobre-mi {
     position: relative;
