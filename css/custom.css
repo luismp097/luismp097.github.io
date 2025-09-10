@@ -1,3 +1,8 @@
+/* Add margin to the button container */
+.d-grid.gap-3.d-sm-flex {
+    margin-bottom: 2.5rem;  /* Increased from default to add more space */
+}
+
 /* Custom styles for project images */
 .project-image-container {
     display: flex;
