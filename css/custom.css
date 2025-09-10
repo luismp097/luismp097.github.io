@@ -1,6 +1,25 @@
+/* Adjust profile image positioning */
+.profile {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.profile .profile-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  left: auto;
+  transform: none;
+  margin-top: 2rem;
+}
+
 /* Add margin to the button container */
 .d-grid.gap-3.d-sm-flex {
-    margin-bottom: 2.5rem;  /* Increased from default to add more space */
+    margin-bottom: 3rem;  /* Increased margin for better spacing */
 }
 
 /* Custom styles for project images */
