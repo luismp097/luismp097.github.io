@@ -495,17 +495,12 @@ h4 { font-size: 1.25rem; }
 
 /* Reset para móviles */
 @media (max-width: 767.98px) {
-    /* Reset de márgenes en el body y html */
-    html, body {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    
-    /* Reset de secciones */
-    section {
+    /* Reset de márgenes y paddings en las secciones */
+    #experiencia,
+    #formacion,
+    #proyectos,
+    #conocimientos,
+    #contacto {
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-left: 0 !important;
@@ -515,19 +510,17 @@ h4 { font-size: 1.25rem; }
     }
     
     /* Reset de contenedores */
-    .container,
-    .container-fluid,
-    .container-xxl,
-    .container-xl,
-    .container-lg,
-    .container-md,
-    .container-sm {
+    #experiencia > .container,
+    #formacion > .container,
+    #proyectos > .container,
+    #conocimientos > .container,
+    #contacto > .container {
         max-width: 100% !important;
-        width: 100% !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        width: 100% !important;
     }
     
     /* Reset de filas */
@@ -565,6 +558,20 @@ h4 { font-size: 1.25rem; }
         padding: 1.25rem !important;
     }
     
+    /* Títulos de sección */
+    .text-center.mb-5 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Imágenes de proyectos */
+    .project-image-container {
+        margin: -1.25rem -1.25rem 1rem -1.25rem !important;
+        width: calc(100% + 2.5rem) !important;
+        max-width: none !important;
+        border-radius: 0 !important;
+    }
+    
     /* Ajuste de texto */
     .text-muted {
         font-size: 0.9rem !important;
@@ -589,150 +596,5 @@ h4 { font-size: 1.25rem; }
         font-size: 1.25rem !important;
         line-height: 1.4 !important;
         width: 100% !important;
-    }
-    
-    /* Asegurar que no haya desbordamiento horizontal */
-    * {
-        box-sizing: border-box;
-        max-width: 100%;
-    }
-}
-
-/* Ajustes para móviles */
-@media (max-width: 767.98px) {
-    /* Contenedor principal */
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    /* Secciones */
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 100%;
-        padding: 1rem 0 !important;
-    }
-    
-    /* Contenedores */
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 1rem !important;
-        max-width: 100% !important;
-    }
-    
-    /* Títulos de sección */
-    .text-center.mb-5 {
-        width: 100%;
-        padding: 0 1rem;
-    }
-    
-    /* Tarjetas */
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0.5rem 0 !important;
-        padding: 0 !important;
-        border-radius: 0.5rem !important;
-        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1) !important;
-    }
-    
-    /* Contenido de tarjetas */
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100% !important;
-        padding: 1.5rem !important;
-    }
-    
-    /* Títulos de tarjetas */
-    .card-body h3 {
-        text-align: center !important;
-        width: 100% !important;
-        margin-bottom: 1rem !important;
-    }
-    
-    /* Badges */
-    .badge {
-        text-align: center !important;
-        margin: 0.25rem !important;
-        padding: 0.5rem 0.75rem !important;
-        display: inline-flex !important;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    /* Contenedor de badges */
-    .d-flex.flex-wrap.gap-1 {
-        justify-content: center !important;
-        width: 100%;
-    }
-    
-    /* Imágenes de proyectos */
-    .project-image-container {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 0 1rem 0 !important;
-        border-radius: 0.5rem 0.5rem 0 0 !important;
-    }
-    
-    /* Botones */
-    .btn {
-        margin: 0.5rem 0;
-        width: auto;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    /* Texto */
-    p, .text-muted {
-        text-align: center !important;
-        width: 100%;
-    }
-    
-    /* Iconos */
-    .bi {
-        margin: 0 0.25rem !important;
-    }
-    
-    /* Timeline */
-    .timeline {
-        text-align: left;
-        padding: 0 1rem;
-    }
-    
-    .timeline::before {
-        left: 1rem !important;
-    }
-    
-    .timeline > div {
-        padding-left: 2rem !important;
-    }
-    
-    /* Asegurar que todo el contenido esté centrado */
-    * {
-        text-align: center;
-    }
-    
-    /* Excepciones para elementos que no deben estar centrados */
-    .timeline *,
-    .timeline p,
-    .timeline .text-muted,
-    .timeline h3 {
-        text-align: left !important;
     }
 }
