@@ -177,6 +177,116 @@
     }
 }
 
+/* Card layout adjustments */
+#experiencia .card,
+#formacion .card,
+#proyectos .card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover effect */
+#experiencia .card:hover,
+#formacion .card:hover,
+#proyectos .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Card body adjustments */
+#experiencia .card-body,
+#formacion .card-body,
+#proyectos .card-body {
+    padding: 1.5rem;
+}
+
+/* Remove extra padding from container */
+#experiencia .container,
+#formacion .container,
+#proyectos .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Adjust row and columns */
+#experiencia .row,
+#formacion .row,
+#proyectos .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+#experiencia [class*="col-"],
+#formacion [class*="col-"],
+#proyectos [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    #experiencia .card-body,
+    #formacion .card-body,
+    #proyectos .card-body {
+        padding: 2rem;
+    }
+    
+    #experiencia .container,
+    #formacion .container,
+    #proyectos .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    #experiencia .row,
+    #formacion .row,
+    #proyectos .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    
+    #experiencia [class*="col-"],
+    #formacion [class*="col-"],
+    #proyectos [class*="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Project images adjustments */
+.project-image-container {
+    height: 180px;
+    margin: 0 -1.5rem 1rem;
+    width: calc(100% + 3rem);
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .project-image-container {
+        margin: 0 -2rem 1.5rem;
+        width: calc(100% + 4rem);
+        height: 220px;
+    }
+}
+
+/* Timeline adjustments */
+.timeline {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.timeline::before {
+    left: 1.5rem;
+}
+
+.timeline > div {
+    padding-left: 3rem;
+}
+
 /* Base container adjustments */
 .container, 
 .container-fluid,
