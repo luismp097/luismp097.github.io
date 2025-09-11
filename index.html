@@ -558,7 +558,7 @@
                                 <span class="badge bg-warning bg-gradient rounded-pill">Automatización</span>
                                 <span class="badge bg-danger bg-gradient rounded-pill">Análisis de Datos</span>
                             </div>
-                            <p class="lead">Sistema de scraping avanzado para extraer y analizar estadísticas de jugadores de Mister/Fantasy Football, generando informes detallados por jornada.</p>
+                            <p class="lead">Solución de web scraping desarrollada en Python para extraer y analizar estadísticas de jugadores de fútbol en la plataforma Mister/Mundodeportivo. El sistema automatiza la recolección de datos por jornada, permitiendo un seguimiento detallado del rendimiento de los jugadores en cada partido.</p>
                             
                             <!-- Galería de imágenes -->
                             <div class="mb-4">
@@ -577,51 +577,88 @@
                             
                             <div class="mb-4">
                                 <h4>Descripción del Proyecto</h4>
-                                <p>Solución completa de web scraping desarrollada en Python para extraer, analizar y visualizar estadísticas detalladas de jugadores de fútbol en plataformas Mister/Fantasy. El sistema automatiza la recopilación de datos por jornada, permitiendo un seguimiento exhaustivo del rendimiento de los jugadores.</p>
+                                <p>Solución de web scraping desarrollada en Python para extraer y analizar estadísticas de jugadores de fútbol en la plataforma Mister/Mundodeportivo. El sistema automatiza la recolección de datos por jornada, permitiendo un seguimiento detallado del rendimiento de los jugadores en cada partido.</p>
                                 
-                                <h5 class="mt-4">Características principales:</h5>
-                                <ul class="mb-4">
-                                    <li><strong>Scraping Avanzado</strong>: Extracción automática de datos de jugadores, incluyendo estadísticas detalladas por partido.</li>
-                                    <li><strong>Análisis por Jornada</strong>: Seguimiento del rendimiento de cada jugador en cada jornada de la liga.</li>
-                                    <li><strong>Informes Personalizados</strong>: Generación de informes detallados con estadísticas clave para cada usuario.</li>
-                                    <li><strong>Visualización de Datos</strong>: Gráficos y tablas interactivas para analizar el rendimiento de los jugadores.</li>
-                                    <li><strong>Base de Datos</strong>: Almacenamiento estructurado de datos para consultas y análisis históricos.</li>
-                                    <li><strong>Interfaz Intuitiva</strong>: Panel de control fácil de usar para acceder a todas las funcionalidades.</li>
-                                </ul>
-                                
-                                <h5 class="mt-4">Tecnologías utilizadas:</h5>
+                                <h5 class="mt-4">Características Principales</h5>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h6 class="fw-bold mt-3">Backend</h6>
-                                        <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Python 3.9+</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>BeautifulSoup4 y Selenium</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pandas para análisis de datos</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>SQLAlchemy para gestión de base de datos</li>
+                                        <h6 class="fw-bold">Extracción de Datos</h6>
+                                        <ul>
+                                            <li>Obtención automática de estadísticas de jugadores</li>
+                                            <li>Captura de datos por jornada</li>
+                                            <li>Detección de jugadores que no han jugado</li>
+                                            <li>Identificación de posiciones vacías</li>
+                                        </ul>
+                                        
+                                        <h6 class="fw-bold mt-3">Generación de Informes</h6>
+                                        <ul>
+                                            <li>Exportación a Excel organizada por jornada</li>
+                                            <li>Resumen de estadísticas por equipo</li>
+                                            <li>Historial de rendimiento</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <h6 class="fw-bold mt-3">Frontend</h6>
+                                        <h6 class="fw-bold">Análisis por Jornada</h6>
+                                        <ul>
+                                            <li>Seguimiento de puntos por jugador</li>
+                                            <li>Registro de goles (incluyendo penaltis)</li>
+                                            <li>Control de tarjetas (amarillas, rojas, doble amarilla)</li>
+                                            <li>Cálculo de asistencias</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h5 class="mt-4">Tecnologías Utilizadas</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold">Backend</h6>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>HTML5, CSS3, JavaScript</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Bootstrap 5</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Chart.js para visualizaciones</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Python 3.13</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Selenium WebDriver</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>OpenPyXL</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>WebDriver Manager</li>
                                         </ul>
                                     </div>
                                 </div>
                                 
-                                <h5 class="mt-4">Funcionalidades Técnicas:</h5>
+                                <h5 class="mt-4">Funcionalidades Técnicas</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Navegación automatizada en sitios web</li>
+                                            <li>Manejo de elementos dinámicos con WebDriverWait</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Procesamiento y limpieza de datos</li>
+                                            <li>Generación estructurada de informes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h5 class="mt-4">Estructura del Código</h5>
                                 <ul>
-                                    <li>Autenticación de usuarios y gestión de perfiles</li>
-                                    <li>Programación de tareas para actualización automática de datos</li>
-                                    <li>Exportación de informes en múltiples formatos (PDF, Excel)</li>
-                                    <li>Notificaciones por correo electrónico de actualizaciones importantes</li>
-                                    <li>API RESTful para integración con otras aplicaciones</li>
+                                    <li>Extracción de datos de jugadores que han jugado</li>
+                                    <li>Detección de jugadores que no han jugado</li>
+                                    <li>Identificación de posiciones vacías</li>
+                                    <li>Procesamiento de estadísticas detalladas</li>
+                                    <li>Generación de informes en formato Excel</li>
                                 </ul>
+
+                                <div class="alert alert-info mt-4" role="alert">
+                                    <i class="bi bi-info-circle me-2"></i> El sistema está diseñado para ser ejecutado periódicamente, actualizando las estadísticas según avanza la temporada. Los informes generados permiten un análisis detallado del rendimiento de los jugadores a lo largo de las diferentes jornadas.
+                                </div>
                             </div>
                             
-                            <div class="alert alert-success" role="alert">
-                                <i class="bi bi-lightbulb me-2"></i> Este proyecto demuestra habilidades avanzadas en web scraping, procesamiento de datos y desarrollo de aplicaciones web con Python.
+                            <!-- Archivos adjuntos -->
+                            <div class="mb-4">
+                                <h4>Documentación</h4>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="assets/TFG_PRESENTACION_RPA_AUTOMATIZACION_LUISMP_DF.pdf" class="btn btn-outline-primary" download>
+                                        <i class="bi bi-file-earmark-pdf me-2"></i>Descargar Presentación TFG Completo (PDF)
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
