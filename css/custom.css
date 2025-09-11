@@ -176,3 +176,108 @@
         flex-shrink: 0;
     }
 }
+
+/* Base container adjustments */
+.container, 
+.container-fluid,
+.container-xxl, 
+.container-xl, 
+.container-lg, 
+.container-md, 
+.container-sm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Main sections padding */
+section.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .container, 
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container, 
+    .container-md, 
+    .container-sm {
+        max-width: 720px;
+    }
+    
+    section.py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, 
+    .container-xl, 
+    .container-lg, 
+    .container-md, 
+    .container-sm {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, 
+    .container-xxl, 
+    .container-xl, 
+    .container-lg, 
+    .container-md, 
+    .container-sm {
+        max-width: 1320px;
+    }
+}
+
+/* Specific section adjustments */
+#inicio,
+#experiencia,
+#formacion,
+#proyectos,
+#conocimientos,
+#contacto {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Card adjustments for better mobile display */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+/* Project cards specific adjustments */
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Responsive text sizing for better mobile display */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+}
