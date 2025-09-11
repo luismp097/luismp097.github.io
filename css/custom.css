@@ -36,6 +36,23 @@
     display: inline-block;
     word-break: break-word;
     overflow-wrap: break-word;
+    text-align: center; /* Center text by default */
+    width: 100%; /* Make badge take full width on mobile */
+}
+
+/* Center the badge container on mobile */
+@media (max-width: 767.98px) {
+    #inicio .badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #inicio .text-uppercase {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 #inicio .badge .text-uppercase {
