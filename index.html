@@ -464,12 +464,13 @@
                             <!-- Detalles del proyecto -->
                             <div class="mb-4">
                                 <h4>Descripción del Proyecto</h4>
-                                <p>Plataforma web en desarrollo que permite a los propietarios de alojamientos turísticos analizar su competencia mediante la geolocalización. Los usuarios pueden añadir un hotel o ubicación utilizando Google Maps, y el sistema identifica y analiza automáticamente los establecimientos competidores en la zona.</p>
+                                <p>Plataforma web desarrollada con Python/Flask que permite a los propietarios de alojamientos turísticos analizar su competencia mediante la geolocalización. Los usuarios pueden añadir un hotel o ubicación, y el sistema identifica y analiza automáticamente los establecimientos competidores en la zona.</p>
                                 
                                 <h5 class="mt-4">Funcionalidades principales:</h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul>
+                                            <li>Gestión de Usuarios y Autenticación</li>
                                             <li>Búsqueda y selección de ubicaciones mediante Google Maps</li>
                                             <li>Identificación automática de competidores en la zona</li>
                                             <li>Análisis comparativo de precios y servicios</li>
@@ -489,23 +490,41 @@
                                 <h5 class="mt-4">Tecnologías utilizadas:</h5>
                                 <div class="row">
                                     <div class="col-md-6">
+                                        <h6 class="fw-bold mt-3">Backend</h6>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Frontend: React, Redux, Material-UI</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Mapas: Google Maps API</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Estilos: CSS3, SASS</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Framework: Python Flask 2.3.3</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Base de datos: PostgreSQL</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>ORM: SQLAlchemy + Flask-Migrate</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Autenticación: Flask-Login</li>
+                                            <li><i class="bi bi-dash-circle text-muted me-2"></i>Tareas asíncronas: <span class="text-muted">(Por implementar)</span></li>
+                                        </ul>
+                                        
+                                        <h6 class="fw-bold mt-3">Herramientas de desarrollo</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Control de versiones: Git</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Contenedores: Docker</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Gestión de dependencias: pip</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
+                                        <h6 class="fw-bold mt-3">Frontend</h6>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Backend: Node.js, Express</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Base de datos: MongoDB</li>
-                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Autenticación: JWT</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Templates: Jinja2</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Estilos: CSS3</li>
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Mapas: Folium (Python)</li>
+                                            <li><i class="bi bi-dash-circle text-muted me-2"></i>Gráficos: <span class="text-muted">(Por implementar)</span></li>
+                                        </ul>
+                                        
+                                        <h6 class="fw-bold mt-3">APIs externas</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Servicios de geolocalización</li>
+                                            <li><i class="bi bi-dash-circle text-muted me-2"></i>Otras APIs <span class="text-muted">(Por implementar)</span></li>
                                         </ul>
                                     </div>
                                 </div>
                                 
                                 <div class="alert alert-info mt-4" role="alert">
-                                    <i class="bi bi-info-circle me-2"></i> Este proyecto se encuentra actualmente en fase de desarrollo activo.
+                                    <i class="bi bi-info-circle me-2"></i> El proyecto se encuentra actualmente en desarrollo activo.
                                 </div>
                             </div>
                             
