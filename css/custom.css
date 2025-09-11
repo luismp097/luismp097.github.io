@@ -186,7 +186,8 @@
     margin-left: 0;
     margin-right: 0;
     border-radius: 0.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 
 /* Card hover effect */
@@ -390,4 +391,104 @@ h4 { font-size: 1.25rem; }
     h2 { font-size: 2rem; }
     h3 { font-size: 1.75rem; }
     h4 { font-size: 1.5rem; }
+}
+
+/* Ajustes generales para todas las tarjetas */
+#experiencia .card,
+#formacion .card,
+#proyectos .card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 767.98px) {
+    /* Contenedor principal */
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* Filas */
+    .row {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+    
+    /* Columnas */
+    [class*="col-"] {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    /* Tarjetas */
+    #experiencia .card,
+    #formacion .card,
+    #proyectos .card {
+        margin-bottom: 1.25rem;
+        border-radius: 0.5rem;
+    }
+    
+    /* Cuerpo de las tarjetas */
+    .card-body {
+        padding: 1.25rem;
+    }
+    
+    /* Imágenes de proyectos */
+    .project-image-container {
+        margin: -1.25rem -1.25rem 1rem -1.25rem;
+        width: calc(100% + 2.5rem);
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
+
+/* Ajustes para tablets y escritorio */
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    .row {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    
+    [class*="col-"] {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Timeline en móviles */
+@media (max-width: 767.98px) {
+    .timeline {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .timeline::before {
+        left: 0.75rem;
+    }
+    
+    .timeline > div {
+        padding-left: 2rem;
+    }
 }
